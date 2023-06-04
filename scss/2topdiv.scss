@@ -1,0 +1,102 @@
+.sign-up-container-top {
+  background-image: url(../images/bg-masthead.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  .overlay {
+    max-width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcome {
+    margin: 0 30px;
+    h1 {
+      @include black-text-shadows;
+      color: $white;
+      font-size: 56px;
+      text-align: center;
+      max-width: 950px;
+    }
+    .form {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      input {
+        width: 500px;
+        height: 60px;
+        border: none;
+        border-radius: 7px;
+        padding: 25px;
+        margin-bottom: 50px;
+        font-size: 18px;
+        @include input-box-shadow;
+      }
+      button {
+        @include button-shadow;
+        height: 60px;
+        font-size: 18px;
+        margin-left: 12.5px;
+      }
+    }
+  }
+}
+// @MEDIA@MEDIA@MEDIA@MEDIA@MEDIA@MEDIA@MEDIA --->
+@media (max-width: 1336px) {
+  div.sign-up-container-top {
+    div.welcome {
+      h1 {
+        font-size: 42px;
+      }
+    }
+  }
+}
+// @MEDIA@MEDIA@MEDIA@MEDIA@MEDIA@MEDIA@MEDIA --->
+@media (max-width: 768px) {
+  div.sign-up-container-top {
+    div.welcome {
+      h1 {
+        font-size: 32px;
+      }
+      div.form {
+        margin-top: 40px;
+        form {
+          display: flex;
+          flex-direction: column;
+        }
+        input {
+          width: 350px;
+          height: 47.5px;
+          font-size: 16px;
+          margin-bottom: 30px;
+        }
+        button {
+          align-self: center;
+          margin-left: 0;
+          height: 45px;
+          width: 90px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+// @MEDIA@MEDIA@MEDIA@MEDIA@MEDIA@MEDIA@MEDIA --->
+@media (max-width: 414px) {
+  div.sign-up-container-top {
+    div.welcome {
+      h1 {
+        font-size: 24px;
+      }
+      div.form {
+        input {
+          width: 300px;
+        }
+      }
+    }
+  }
+}

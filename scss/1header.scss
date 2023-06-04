@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  width: 100%;
+  position: fixed;
+  background: white;
+  z-index: 3;
+  p {
+    @include black-text-shadows-slight;
+    align-self: center;
+    font-size: 18px;
+    color: $gray;
+  }
+  button {
+    @include button-shadow;
+    width: 70px;
+    height: 35px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,123 @@
+section {
+  background-color: rgba(189, 189, 189, 0.1);
+  display: flex;
+  flex-direction: column;
+  .testimonials-h2 {
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include black-shadows;
+  }
+  .testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+    h4 {
+      padding-top: 30px;
+      font-size: 24px;
+      @include black-shadows;
+    }
+    p {
+      color: $gray;
+      padding: 10px 15px;
+      max-width: 360px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 25px;
+    }
+    img {
+      object-fit: cover;
+      width: 225px;
+      border-radius: 100%;
+      box-shadow: 1px 5px 5px rgb(84, 84, 84);
+    }
+    .margaret {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        animation: photo-flip1 1s infinite alternate;
+        @keyframes photo-flip1 {
+          from {
+            transform: rotate(-1deg);
+          }
+          to {
+            transform: rotate(1deg);
+          }
+        }
+      }
+    }
+    .fred {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        animation: photo-flip2 1s infinite alternate;
+        @keyframes photo-flip2 {
+          from {
+            transform: rotate(1deg);
+          }
+          to {
+            transform: rotate(-1deg);
+          }
+        }
+      }
+    }
+    .sarah {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        animation: photo-flip1 1s infinite alternate;
+      }
+    }
+  }
+}
+// @MEDIA@MEDIA@MEDIA@MEDIA@MEDIA@MEDIA@MEDIA --->
+@media (max-width: 1336px) {
+  section.testimonials {
+    div.testimonials-h2 {
+      font-size: 24px;
+    }
+    div.testimonials {
+      h4 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 16px;
+      }
+      img {
+        width: 175px;
+      }
+    }
+  }
+}
+// @MEDIA@MEDIA@MEDIA@MEDIA@MEDIA@MEDIA@MEDIA --->
+@media (max-width: 768px) {
+  section.testimonials {
+    div.testimonials-h2 {
+      font-size: 22px;
+      padding-bottom: 40px;
+    }
+    div.testimonials {
+      flex-direction: column;
+      div.margaret {
+        padding-bottom: 30px;
+      }
+      div.fred {
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
+// @MEDIA@MEDIA@MEDIA@MEDIA@MEDIA@MEDIA@MEDIA --->
+@media (max-width: 414px) {
+  section.testimonials {
+    div.testimonials-h2 {
+      font-size: 18px;
+    }
+  }
+}
