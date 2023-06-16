@@ -6,7 +6,6 @@ header {
   position: fixed;
   background: white;
   z-index: 3;
-  overflow-x: hidden;
   p {
     @include black-text-shadows-slight;
     align-self: center;
