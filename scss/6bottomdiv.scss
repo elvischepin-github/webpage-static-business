@@ -5,6 +5,7 @@
   background-size: cover;
   height: 400px;
   width: 100%;
+  overflow-x: hidden;
   h1 {
     @include black-text-shadows;
     color: $white;

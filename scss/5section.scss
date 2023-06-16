@@ -3,6 +3,7 @@ section {
   display: flex;
   flex-direction: column;
   width: 100%;
+  overflow-x: hidden;
   .testimonials-h2 {
     font-size: 26px;
     display: flex;
