@@ -5,7 +5,9 @@
   font-family: lato;
   text-decoration: none;
 }
-body,
-html {
-  white-space: pre-wrap;
+
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
