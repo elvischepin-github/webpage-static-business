@@ -2,10 +2,11 @@ header {
   display: flex;
   justify-content: space-around;
   padding: 10px 0;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   background: white;
   z-index: 3;
+  background-origin: border-box;
   p {
     @include black-text-shadows-slight;
     align-self: center;
