@@ -1,13 +1,12 @@
 .container {
   background-color: rgba(189, 189, 189, 0.1);
-  // width: 100%;
+  width: 100%;
   padding-top: 150px;
   padding-bottom: 200px;
   text-align: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid fuchsia;
   position: relative;
   .container-div-2 {
     img {
