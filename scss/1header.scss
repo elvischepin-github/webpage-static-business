@@ -6,7 +6,7 @@ header {
   position: fixed;
   background: white;
   z-index: 3;
-  background-origin: border-box;
+  border: 1px solid red;
   p {
     @include black-text-shadows-slight;
     align-self: center;

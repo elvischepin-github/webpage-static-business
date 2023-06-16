@@ -5,9 +5,8 @@
   font-family: lato;
   text-decoration: none;
 }
-
+body,
 html {
-  padding: 0;
-  margin: 0;
-  width: auto;
+  width: 100vw;
+  overflow-x: hidden;
 }
