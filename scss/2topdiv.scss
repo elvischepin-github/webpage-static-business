@@ -15,7 +15,7 @@
     align-items: center;
   }
   .welcome {
-    margin: 0 30px;
+    // margin: 0 30px;
     h1 {
       @include black-text-shadows;
       color: $white;
@@ -70,7 +70,7 @@
           flex-direction: column;
         }
         input {
-          width: 350px;
+          max-width: 350px;
           height: 47.5px;
           font-size: 16px;
           margin-bottom: 30px;
