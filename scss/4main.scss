@@ -103,12 +103,18 @@ main {
     }
     div.main-sub-container-2 {
       flex-direction: column;
+      .main-div-2 {
+        width: unset;
+      }
       .main-div-img-2 {
         height: 500px;
       }
     }
     div.main-sub-container-3 {
       flex-direction: column;
+      .main-div-3 {
+        width: unset;
+      }
       .main-div-img-3 {
         height: 500px;
         img {
